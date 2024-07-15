@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            background-color: black;
+            
+        }
+        .aa{
+            text-decoration: none;
+            color: white;
+            margin-left: 50px;
+        }
+        .nav-item{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+            
+        }
+        .nav-item a{
+            margin-left: 40px;
+            text-decoration: none;
+            color: white;
+            margin-right: 40px;
+        }
+        .nav-item a:hover{
+            text-decoration: underline;
+            color: aliceblue;
+        }
+        .main{
+            display: grid;
+            height: 100vh;
+            background-color: rgb(5, 107, 250);
+            grid-template-areas: "div1 div2";
+            font-size: 20px;
+        }
+        .d1{
+            grid-area: div1;
+            height: 40%;
+            padding: 20px;
+            margin: 50px;
+            color: white;
+            text-align: center;
+            /* margin-top: 250px; */
+        }
+        .d1 button{
+            border: 1px solid white;
+            background-color: rgb(5, 107, 250);
+            width: 105px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .d2{
+            grid-area: div2;
+            height: 40%;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid white;
+            margin: 50px;
+            border-radius: 20px;
+        }
+        @media (max-width: 600px) {
+            .main{
+                background-color: rgb(5, 107, 250);
+                grid-template-areas: "div1"
+                                     "div2";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="" class="aa"><h1>McLesson</h1></a>
+        <div class="nav-item">
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Docs</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sint nihil accusantium distinctio tempore atque totam pariatur aut magnam esse sit beatae deserunt temporibus expedita, perferendis quis possimus iure ex?
+         Ratione  doloremque esse adipisci modi eius qui est amet. Voluptatem magni beatae dignissimos, veniam harum quis accusamus?
+         <br><br><button>Read More</button></div>
+        <div class="d2">Lorem ipsum dolor sit amet consectetur adipisicing elit. placeat maxime sunt minus, minima aut est recusandae impedit?
+        Recusandae aliquam hic est sunt dicta! Adipisci nesciunt, nisi officiis esse molestiae, a ab porro, at ea dolore tenetur?</div>
+    </div>
+</body>
+</html>
